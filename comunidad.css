@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+   
+/*:::Edición del menú de arriba:*/
+
+}
+header{
+    background-image: url(images/fondo\ contacto.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo{
+    font-weight: 700;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #a822d1; 
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor:pointer;
+    display: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+/*:::Edición de los iconos de las redes sociales::*/
+
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+/*:::INSTRAGRAM::*/
+.icon:hover {
+    background-color: #e60073;
+    box-shadow:  0 0 20px #e60073 ;
+}
+
+/*:::FACEBOOK::*/
+
+.icon:hover:nth-child(2) {
+    background-color: #1877f2;
+    box-shadow:  0 0 20px #1877f2;
+}
+
+/*:::WHATSAPP::*/
+
+.icon:hover:nth-child(3) {
+    background-color: #25d366;
+    box-shadow: 0 0 20px #25d366 ;
+}
+
+/*:::TWITTER::*/
+
+.icon:hover:nth-child(4) {
+    background-color: #1da1f2;
+    box-shadow:  0 0 20px #1da1f2 ;
+}
+/*:::TIKTOK::*/
+.icon:hover:nth-child(5) {
+    background-color: #050505;
+    box-shadow:  0 0 20px #050505;
+}
+/*:::GMAIL::*/
+.icon:hover:nth-child(6) {
+    background: -webkit-linear-gradient(to right, #4144f7, #fa2828, #f7fa39,#2ae033);
+    background: linear-gradient(to right, #4144f7,#fa2828,#f7fa39,#2ae033);
+    box-shadow:  0 0 20px #4144f7,#fa2828,#f7fa39,#2ae033;
+}
+/*:::YOUTUBE::*/
+.icon:hover:nth-child(7) {
+    background-color: #ff0404;
+    box-shadow:  0 0 20px #ff0404;
+}
+/*:::Edición del efecto::*/
+.icon i {
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.7rem;
+}
+
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+    stroke-dasharray: 220;
+}
+@media(max-width:991px){
+    .menu{
+        padding: 20px;
+    }
+    .menu label{
+        display: inline;
+    } 
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none
+    }
+    
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    .menu .navbar ul li a{
+        color: #ffffff;
+    }
+
+    #menu:checked~ .navbar{
+        display: inline;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .header{
+        min-height: 0vh;
+        background-position: 0 0;
+        background-size: 1000px 1100px;
+    }
+
+    .header-content{
+        padding: 50px 0;
+        flex-direction: column;
+    }
+
+    .header-txt h1{
+        font-size: 70px;
+    }
+    .boton-modal{
+        min-height: 0vh;
+        
+    }
+}

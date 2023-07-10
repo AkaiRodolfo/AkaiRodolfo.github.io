@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    
+  
+    
+    
+}
+ body{
+    background-image: url(images/Fondo\ Servicio.jpg);
+ }
+
+
+
+
+ /*:::menu de arriba:::*/
+ header{
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo{
+    font-weight: 700;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #a822d1; 
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor:pointer;
+    display: none;
+}
+/*:::Hasta aqui es el menu de arriba:::*/
+
+
+/*:::Contenido:::*/
+.catalogo-container{
+    padding: 150px 80px;
+    text-align: center;
+    color: #ffffff;
+    
+    
+}
+
+     /*:::tiutlo catalogo:::*/
+.titulo{
+    padding: 40px 80px;
+    font-size: 80px;
+    margin-top:-50px;
+}
+
+span{
+    background: #c6fb4b;
+    background: -webkit-linear-gradient(to right, #cc34b8, #fadd5d, #2ae033);
+    background: linear-gradient(to right, #cc34b8,#fadd5d, #2ae033);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+    /*:::fin de titulo catalogo:::*/
+
+.catalogo-principal{
+    display: flex;
+    align-items: center;
+
+}
+
+.catalogo-principal img{
+    width: 350px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+
+
+.catalogo-principal img:hover{
+    cursor: crosshair;
+    width: 360px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.catalogo-1{
+    text-align: left;
+    margin-left: 0px;
+    padding: 120px 50px;
+}
+
+.catalogo-1 h3{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.catalogo-1 p{
+    font-size: 18px;
+    color: #8282db;
+    margin-bottom: 25px;
+}
+
+
+
+.catalogo-2{
+    text-align: left;
+    margin-right: 0px;
+    padding: 80px 40px;
+}
+
+.catalogo-2 h3{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.catalogo-2 p{
+    font-size: 18px;
+    color: #8282db;
+    margin-bottom: 25px;
+}
+
+
+
+
+.catalogo-3{
+    text-align: left;
+    margin-right: 0px;
+    padding: 100px 40px;
+    
+    
+}
+
+.catalogo-3 h3{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.catalogo-3 p{
+    font-size: 18px;
+    color: #8282db;
+    margin-bottom: 25px;
+}
+
+
+.catalogo-4{
+    text-align: left;
+    margin-right: 0px;
+    padding: 100px 50px;
+}
+
+.catalogo-4 h3{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.catalogo-4 p{
+    font-size: 18px;
+    color: #8282db;
+    margin-bottom: 25px;
+}
+
+
+/*:::BOTONES:::*/
+.btn-2{
+    display: inline-block;
+    background-color: #be36e0d3;
+    border: 1px solid #930b9cd5;
+    margin: 35px 10px 0px 0px;
+    padding: 15px 25px;
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+.btn-2:hover{
+    background-color: #a61edb9a
+
+}
+/*:::FIN DE BOTONES:::*/
+
+@media(max-width:991px){
+    .menu{
+        padding: 20px;
+    }
+    .menu label{
+        display: inline;
+    } 
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none
+    }
+    
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    .menu .navbar ul li a{
+        color: #ffffff;
+    }
+
+    #menu:checked~ .navbar{
+        display: inline;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .header{
+        min-height: 0vh;
+        background-position: 0 0;
+        background-size: 1000px 1100px;
+    }
+
+    .header-content{
+        padding: 50px 0;
+        flex-direction: column;
+    }
+
+    .header-txt h1{
+        font-size: 70px;
+    }
+
+}

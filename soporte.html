@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros de usuarios</title>
+    <link rel="shortcut icon" href="images/icono soporte.jpg">
+    <link rel="stylesheet" href="soporte.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="Nosotros.html" class="logo">Ad.Magic</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="comunidad.html">Comunidad</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <form action="" class="formulario" id="formulario">
+                <!-- Grupo: Usuario -->
+                <div class="formulario__grupo" id="grupo__usuario">
+                    <label for="usuario" class="formulario__label"><font color="white">Usuario:</font></label>
+                    <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Ingrese usuario">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                </div>
+                <!-- Grupo: Nombre -->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label"><font color="white">Nombre:</font></label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingrese nombre">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                </div>
+                <!-- Grupo: Contraseña -->
+                <div class="formulario__grupo" id="grupo__password">
+                    <label for="password" class="formulario__label"><font color="white">Contraseña</font></label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password" id="password">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                </div>
+                <!-- Grupo: Contraseña 2 -->
+                <div class="formulario__grupo" id="grupo__password2">
+                    <label for="password2" class="formulario__label"><font color="white">Repetir Contraseña</font></label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password2" id="password2">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">la contraseña ingresada es inválida</p>
+                </div>
+
+                <!-- Grupo: Correo Electronico -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label"><font color="white">Correo Electrónico</font></label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                </div>
+                <!-- Grupo: Comentario -->
+                <div class="formulario__grupo" id="grupo__comentario">
+                    <label for="correo" class="formulario__label"><font color="white">Comentario:</font></label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="comentario" id="comentario" placeholder="Escribe aquí">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                </div>
+            
+                <!-- Grupo: Terminos y Condiciones -->
+                <div class="formulario__grupo" id="grupo__terminos">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        <font color="white">Acepto terminos</font>
+                    </label>
+                </div>
+    
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Los registros no son válidos </p>
+                </div>
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Registrar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Registro exitoso!</p>
+                </div>
+            
+            </form>
+        </main>
+    <script src="soporte.js"></script>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+        

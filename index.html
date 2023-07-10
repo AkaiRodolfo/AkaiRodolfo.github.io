@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="shortcut icon" href="images/icono Inicio.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="Nosotros.html" class="logo">AD .Magic</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="comunidad.html">Comunidad</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div style="padding-top: 50px;" class="header-content container">
+            <div class="head-img">
+                <img style="padding-right: 50px;" height="450px" width="400px" src="images/logo2.webp" alt="">
+            </div>
+            <div class="header-txt">
+                <h1 style="font-size: 70px;">Emociones fuertes y aventuras inolvidables</h1>
+                <p>AQUÍ ENCONTRARÁS JUEGOS ADICTIVOS, DIVERTIDOS Y EMOCIONANTES</p>
+            </div>
+        </div>
+        <!-- Boton -->
+        <div class="boton-modal-container">
+            <div class="boton-modal">
+                <label for="btn-modal">
+                    Nosotros
+                </label>
+            </div>
+        </div>
+        <!-- Fin de Boton -->
+
+        <!-- Ventana Modal -->
+        <input type="checkbox" id="btn-modal">
+        <div class="container-modal">
+            <div class="content-modal">
+                <h2><center>Integrantes:</h2></center>
+                <p><font color="White">°Lizbeth Anyoza</p></font>
+                <p><font color="White">°Jorge Huachillo</p></font>
+                <p><font color="White">°José Echegaray</p></font>
+                <p><font color="White">°Selene Valderrama</p>
+                <div class="btn-cerrar" >
+                    <label for="btn-modal">Cerrar</label>
+                </div>
+            </div>
+        </div>
+        <label for="btn-modal" class="cerrar-modal"> </label>
+        <!-- Fin de Ventana Modal --> 
+    </header>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

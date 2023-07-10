@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-size: 100%;
+    background-image: url(images/Fondo\ Nosotros.jpg);
+    background-position:100% ;
+}
+
+/*:::menu de arriba:::*/
+header{
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    background-size: 1375px 800px;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo{
+    font-weight: 700;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #a822d1; 
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor:pointer;
+    display: none;
+}
+.catalogo-container{
+    padding: 100px 90px;
+    text-align: justify;
+    color: #ffffff;
+    background-color: #ffffff;
+    
+}
+.catalogo-principal{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: #be36e0d3 thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: white;
+
+}
+.catalogo-1{
+    text-align: left;
+    margin-left: 0px;
+    padding: 120px 50px;
+}
+
+.catalogo-1 h3{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.catalogo-1 p{
+    font-size: 18px;
+    color: #8282db;
+    margin-bottom: 25px;
+    justify-content: justify;
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 20px;
+    }
+    .menu label{
+        display: inline;
+    } 
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none
+    }
+    
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    .menu .navbar ul li a{
+        color: #ffffff;
+    }
+
+    #menu:checked~ .navbar{
+        display: inline;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .header{
+        min-height: 0vh;
+        background-position: 0 0;
+        background-size: 1000px 1100px;
+    }
+
+    .header-content{
+        padding: 50px 0;
+        flex-direction: column;
+    }
+
+    .header-txt h1{
+        font-size: 70px;
+    }
+    .boton-modal{
+        min-height: 0vh;
+        
+    }
+}
