@@ -244,10 +244,9 @@ main {
     }
 }
 
-@media(max-width:1000px){
+@media(max-width:991px){
     .menu{
         padding: 20px;
-        padding-top: 1px;
     }
     .menu label{
         display: inline;
@@ -287,16 +286,9 @@ main {
         flex-direction: column;
     }
 
-    .header.img{
-        display: none;
-    }
-
-    .header.txt{
-        flex-basis: 100%;
-        text-align: center;
-    }
     .header-txt h1{
         font-size: 70px;
     }
-    
+
 }
+
