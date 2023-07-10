@@ -254,7 +254,6 @@ background-color: #be36e0d3;
     .header-content{
         padding: 50px 0;
         flex-direction: column;
-        background-size: 100%;
     }
 
     .header-txt h1{
