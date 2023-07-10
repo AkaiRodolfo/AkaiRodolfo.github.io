@@ -248,7 +248,7 @@ background-color: #be36e0d3;
     .header{
         min-height: 0vh;
         background-position: 0 0;
-        background-size: 1000px 1100px;
+        background-size: 100%;
     }
 
     .header-content{
