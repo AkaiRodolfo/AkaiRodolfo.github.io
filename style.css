@@ -31,7 +31,7 @@ img{
     align-items: center;
     min-height: 100vh;
     background-image: url(images/nuevofondo.png);
-    padding: 70px 0;
+    padding: 70px 10px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1375px 800px;
@@ -216,10 +216,7 @@ background-color: #be36e0d3;
 @media(max-width:991px){
     .menu{
         padding: 20px;
-    }
-    .body{
-        overflow-x: hidden;
-        width: 100%;
+        padding-top: 1px;
     }
     .menu label{
         display: inline;
@@ -276,4 +273,3 @@ background-color: #be36e0d3;
 }
     
 }
-
