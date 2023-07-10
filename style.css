@@ -218,6 +218,9 @@ background-color: #be36e0d3;
     .menu{
         padding: 20px;
     }
+    .body{
+        overflow-x: hidden;
+    }
     .menu label{
         display: inline;
     } 
