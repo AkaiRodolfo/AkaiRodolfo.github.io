@@ -1,274 +1,276 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
 
-/*
-font-family: 'Oswald', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: "poppins",sans-serif;
-}
-
-body{
+    /*
+    font-family: 'Oswald', sans-serif;
     font-family: 'Poppins', sans-serif;
-}
+    */
 
-img{
-    max-width: 100%;
-}
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header {
-    align-items: center;
-    min-height: 100vh;
-    background-image: url(images/nuevofondo.png);
-    padding: 70px 10px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1375px 800px;
-    margin: 0;
-}
-
-.menu{
-    position: absolute;
-    top: 25px;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-}
-
-.logo{
-    font-size: 25px;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-.menu .navbar ul li{
-    position: relative;
-    float: left;
-}
-
-.menu .navbar ul li a{
-    font-size: 18px;
-    padding: 20px;
-    color: #ffffff;
-    display: block;
-}
-
-.menu .navbar ul li a:hover {
-    color: #a822d1; 
-}
-
-#menu {
-    display: none;
-}
-
-.menu-icono {
-    width: 25px;
-}
-
-.menu label {
-    cursor:pointer;
-    display: none;
-}	
-
-.header-content{
-    display: flex;
-    align-items: center;
-    flex: 1;
-    padding: 0 200px;
-}
-
-.header-img{
-    flex-basis: 50%;
-    text-align: center;
-}
-
-.header-txt{
-    flex-basis: 10%;
-    padding-left: 20px;
-    text-align: center;
-}
-
-.header-txt h1{
-    font-size: 90px;
-    text-transform: uppercase;
-    line-height: 1;
-    color: #ececec;
-    font-family: "Oswald",sans-serif;
-    margin-bottom: 15px;
-}
-
-.header-txt p{
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    color: white;
-}
-
-/*:::Boton modal:::*/
-.boton-modal{
-    padding:none;
-    background-color: #a0746c00;
-    position: absolute;
-    bottom: 0;  
-    left: 0;
-    transform-origin: bottom left;
-    margin-left: 20px; margin-bottom: 30px;
-}
-
-.boton-modal label{
-    display: inline-block;
-    background-color: rgba(131, 15, 90, 0.411);
-    border: 1px solid #c323c9d5;
-    margin: 35px 10px 0px 0px;
-    padding: 15px 25px;
-    color: rgb(255, 245, 245);
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 300ms ease;
-}
-
-.boton-modal label:hover {
-    background-color: #be36e0d3;
-}
-
-#btn-modal{
-    display: none;
-}
-
-.container-modal{
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0; left: 0;
-    background-color: rgba(150, 144, 149, 0.8);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-
-}
-#btn-modal:checked ~ .container-modal{
-    display: flex;
-}
-.content-modal{
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    background-color: #7c267c;
-    border-radius: 4px;
-}
-.content-modal h2 {
-    margin-bottom: 15px;
-    color: #fff;
-}
-.content-modal p {
-    padding: 15px 0px;
-    border-top: 1px solid #dbdbdb;
-    
-}
-
-.content-modal .btn-cerrar{
-    width: 100%;
-    margin-top: 15px;
-    display: flex;
-    justify-content: flex-end;
-}
-.content-modal .btn-cerrar label{
-    padding: 7px 10px;
-    background-color: rgba(131, 15, 90, 0.411);
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 300ms ease;
-    border: 1px solid #c323c9d5;
-}
-
-
-.content-modal .btn-cerrar label:hover{
-background-color: #be36e0d3;
-}
-.cerrrar-modal{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0; left: 0;
-    z-index: -1;
-}
-
-/*:::Fin de boton modal:::*/
-
-
-@media(max-width:991px){
-    .menu{
-        padding: 20px;
-        padding-top: 1px;
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        font-family: "poppins",sans-serif;
     }
-    .menu label{
-        display: inline;
-    } 
-    .menu .navbar{
+
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .header {
+        align-items: center;
+        min-height: 100vh;
+        background-image: url(images/nuevofondo.png);
+        padding: 70px 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 1375px 800px;
+        margin: 0;
+    }
+
+    .menu{
         position: absolute;
-        top: 100%;
+        top: 25px;
         left: 0;
         right: 0;
-        background-color: #181818;
-        display: none
-    }
-    
-    .menu .navbar ul li{
-        width: 100%;
-    }
-    .menu .navbar ul li a{
-        color: #ffffff;
-    }
-
-    #menu:checked~ .navbar{
-        display: inline;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
     }
 
     .logo{
+        font-size: 25px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    .menu .navbar ul li{
+        position: relative;
+        float: left;
+    }
+
+    .menu .navbar ul li a{
+        font-size: 18px;
+        padding: 20px;
+        color: #ffffff;
+        display: block;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #a822d1; 
+    }
+
+    #menu {
         display: none;
     }
 
-    .header{
-        min-height: 0vh;
-        background-position: 0 0;
-        background-size: 1000px 1100px;
+    .menu-icono {
+        width: 25px;
     }
 
+    .menu label {
+        cursor:pointer;
+        display: none;
+    }	
+
     .header-content{
-        padding: 50px 0;
-        flex-direction: column;
+        display: flex;
+        align-items: center;
+        flex: 1;
+        padding: 0 200px;
+    }
+
+    .header-img{
+        flex-basis: 50%;
+        text-align: center;
+    }
+
+    .header-txt{
+        flex-basis: 10%;
+        padding-left: 20px;
+        text-align: center;
     }
 
     .header-txt h1{
-        font-size: 70px;
+        font-size: 90px;
+        text-transform: uppercase;
+        line-height: 1;
+        color: #ececec;
+        font-family: "Oswald",sans-serif;
+        margin-bottom: 15px;
     }
+
+    .header-txt p{
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    /*:::Boton modal:::*/
     .boton-modal{
-        min-height: 0vh;
+        padding:none;
+        background-color: #a0746c00;
+        position: absolute;
+        bottom: 0;  
+        left: 0;
+        transform-origin: bottom left;
+        margin-left: 20px; margin-bottom: 30px;
+    }
+
+    .boton-modal label{
+        display: inline-block;
+        background-color: rgba(131, 15, 90, 0.411);
+        border: 1px solid #c323c9d5;
+        margin: 35px 10px 0px 0px;
+        padding: 15px 25px;
+        color: rgb(255, 245, 245);
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 300ms ease;
+    }
+
+    .boton-modal label:hover {
+        background-color: #be36e0d3;
+    }
+
+    #btn-modal{
+        display: none;
+    }
+
+    .container-modal{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0; left: 0;
+        background-color: rgba(150, 144, 149, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+
+    }
+    #btn-modal:checked ~ .container-modal{
+        display: flex;
+    }
+    .content-modal{
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #7c267c;
+        border-radius: 4px;
+    }
+    .content-modal h2 {
+        margin-bottom: 15px;
+        color: #fff;
+    }
+    .content-modal p {
+        padding: 15px 0px;
+        border-top: 1px solid #dbdbdb;
         
     }
-    .boton-modal-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    transform: translate(0, 0);
-}
-    
-}
+
+    .content-modal .btn-cerrar{
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .content-modal .btn-cerrar label{
+        padding: 7px 10px;
+        background-color: rgba(131, 15, 90, 0.411);
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 300ms ease;
+        border: 1px solid #c323c9d5;
+    }
+
+
+    .content-modal .btn-cerrar label:hover{
+    background-color: #be36e0d3;
+    }
+    .cerrrar-modal{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0; left: 0;
+        z-index: -1;
+    }
+
+    /*:::Fin de boton modal:::*/
+
+
+    @media(max-width:991px){
+        .menu{
+            padding: 20px;
+            padding-top: 1px;
+        }
+        .menu label{
+            display: inline;
+        } 
+        .menu .navbar{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: #181818;
+            display: none
+        }
+        
+        .menu .navbar ul li{
+            width: 100%;
+        }
+        .menu .navbar ul li a{
+            color: #ffffff;
+        }
+
+        #menu:checked~ .navbar{
+            display: inline;
+        }
+
+        .logo{
+            display: none;
+        }
+
+        .header{
+            min-height: 0vh;
+            background-position: 0 0;
+            background-size: 1000px 1100px;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        .header-content{
+            padding: 50px 0;
+            flex-direction: column;
+        }
+
+        .header-txt h1{
+            font-size: 70px;
+        }
+        .boton-modal{
+            min-height: 0vh;
+            
+        }
+        .boton-modal-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        transform: translate(0, 0);
+    }
+        
+    }
 
